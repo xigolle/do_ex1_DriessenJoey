@@ -1,2 +1,2 @@
-# do_ex1_DriessenJoey
-Repo to test Vagrant
+# Vagrant
+Repo to test with Vagrant
