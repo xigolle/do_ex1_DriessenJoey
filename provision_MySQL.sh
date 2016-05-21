@@ -3,4 +3,4 @@ echo "installing debconf"
 debconf-set-selections <<< "mysql-server/root_password password 1234"
 debconf-set-selections <<< "mysql-server mysql-server/root_password_again password 1234"
 echo "installing mysql"
-apt-get install mysql-sever -y
+apt-get install mysql-server -y
