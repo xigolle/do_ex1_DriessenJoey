@@ -1,3 +1,3 @@
 echo "----------------installing PHP"
-apt-get install php5-fpm -y
-service php5-fpm restart
+apt-get -y install php5 libapache2-mod-php5 php5-mcrypt
+service apache2 restart
