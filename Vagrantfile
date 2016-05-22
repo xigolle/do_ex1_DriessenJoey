@@ -9,11 +9,11 @@ end
 config.vm.box = "ubuntu/trusty32"
 config.vm.hostname = "joey.be"
 config.vm.network "forwarded_port", guest:80, host:8060
-config.vm.post_up_message
+
 config.vm.provision "shell",path:"provision_apache.sh"
 config.vm.provision "shell",path:"provision_php.sh"
-
-
+config.vm.provision "shell",path:"provision_MySQL.sh"
+config.vm.post_up_message ="Vagrant is done and ready for use! just SSH that thing :)"
 
 
 
